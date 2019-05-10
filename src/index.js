@@ -1,12 +1,10 @@
-let a = require('./a.js');
-// import avatar from './avatar.jpg';
-import './index.scss';
+// import "@babel/polyfill";
 
-// var img = new Image();
-// img.src = avatar;
+const arr = [
+	new Promise(() => {}),
+	new Promise(() => {})
+];
 
-// var root = document.getElementById('root');
-// root.append(img);
-root.innerHTML = '<div class="iconfont icon-icon_group"></div>';
-
-console.log(a + '1');
+arr.map(item => {
+	console.log(item);
+});
